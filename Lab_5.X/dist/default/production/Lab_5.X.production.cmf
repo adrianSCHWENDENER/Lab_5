@@ -1,0 +1,287 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Principal.o
+TABLA code 0 0 0 289 2 1
+resVect CODDE 0 0 0 3 2 1
+code CODE 0 0 0 10 2 1
+udata_bank0 BANK0 1 20 20 C 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 2C-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 2C-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 289-1FFF 2
+ENTRY 289-1FFF 2
+IDLOC 2000-2003 2
+CODE 289-1FFF 2
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 289-1FFF 2
+STRING 289-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Principal.o
+0 TABLA code >86:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+200 TABLA code >89:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+201 TABLA code >90:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+202 TABLA code >91:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+203 TABLA code >92:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+204 TABLA code >95:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+205 TABLA code >96:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+206 TABLA code >97:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+207 TABLA code >98:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+208 TABLA code >99:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+209 TABLA code >100:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+20A TABLA code >101:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+20B TABLA code >102:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+20C TABLA code >103:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+20D TABLA code >104:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+20E TABLA code >105:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+20F TABLA code >106:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+210 TABLA code >107:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+211 TABLA code >108:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+212 TABLA code >109:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+213 TABLA code >110:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+214 TABLA code >115:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+216 TABLA code >116:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+217 TABLA code >117:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+218 TABLA code >119:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+21A TABLA code >120:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+21B TABLA code >121:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+21C TABLA code >123:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+21D TABLA code >124:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+21E TABLA code >126:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+21F TABLA code >127:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+220 TABLA code >129:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+221 TABLA code >130:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+222 TABLA code >132:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+223 TABLA code >133:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+224 TABLA code >134:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+225 TABLA code >135:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+226 TABLA code >136:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+227 TABLA code >138:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+229 TABLA code >139:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+22A TABLA code >140:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+22B TABLA code >142:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+22C TABLA code >143:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+22D TABLA code >144:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+22E TABLA code >145:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+22F TABLA code >150:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+230 TABLA code >151:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+231 TABLA code >153:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+232 TABLA code >154:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+233 TABLA code >156:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+234 TABLA code >157:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+235 TABLA code >158:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+236 TABLA code >160:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+237 TABLA code >161:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+238 TABLA code >162:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+239 TABLA code >164:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+23A TABLA code >169:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+23B TABLA code >170:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+23C TABLA code >172:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+23D TABLA code >173:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+23E TABLA code >175:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+23F TABLA code >177:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+240 TABLA code >180:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+241 TABLA code >181:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+242 TABLA code >182:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+243 TABLA code >184:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+244 TABLA code >186:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+245 TABLA code >187:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+246 TABLA code >188:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+247 TABLA code >189:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+248 TABLA code >190:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+249 TABLA code >191:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+24A TABLA code >195:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+24B TABLA code >196:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+24C TABLA code >197:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+24D TABLA code >199:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+24E TABLA code >200:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+24F TABLA code >202:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+250 TABLA code >205:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+251 TABLA code >206:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+252 TABLA code >207:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+253 TABLA code >209:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+254 TABLA code >210:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+255 TABLA code >212:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+256 TABLA code >215:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+257 TABLA code >216:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+258 TABLA code >217:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+259 TABLA code >219:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+25A TABLA code >220:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+25B TABLA code >222:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+25C TABLA code >225:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+25D TABLA code >226:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+25E TABLA code >227:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+25F TABLA code >228:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+260 TABLA code >229:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+261 TABLA code >230:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+262 TABLA code >231:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+263 TABLA code >232:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+264 TABLA code >234:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+265 TABLA code >237:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+266 TABLA code >238:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+267 TABLA code >239:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+268 TABLA code >240:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+269 TABLA code >241:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+26A TABLA code >242:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+26B TABLA code >243:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+26C TABLA code >244:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+26D TABLA code >246:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+26E TABLA code >249:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+26F TABLA code >250:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+270 TABLA code >251:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+271 TABLA code >252:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+272 TABLA code >253:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+273 TABLA code >254:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+274 TABLA code >255:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+275 TABLA code >256:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+276 TABLA code >258:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+277 TABLA code >261:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+278 TABLA code >262:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+279 TABLA code >263:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+27A TABLA code >265:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+27B TABLA code >266:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+27C TABLA code >267:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+27D TABLA code >268:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+27E TABLA code >270:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+27F TABLA code >273:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+280 TABLA code >274:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+281 TABLA code >275:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+282 TABLA code >277:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+283 TABLA code >278:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+284 TABLA code >279:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+285 TABLA code >281:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+286 TABLA code >282:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+287 TABLA code >283:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+288 TABLA code >285:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+0 resVect CODDE >49:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+0 resVect CODDE >52:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+2 resVect CODDE >53:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+0 code CODE >57:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+4 code CODE >66:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+5 code CODE >67:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+6 code CODE >68:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+7 code CODE >71:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+8 code CODE >72:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+9 code CODE >74:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+A code CODE >75:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+B code CODE >78:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+C code CODE >79:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+D code CODE >80:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+E code CODE >81:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+F code CODE >82:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+100 code CODE >63:C:\Users\schwe\MPLABXProjects\Lab_5.X\Principal.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 289 0 ABS 0 - -
+__Hspace_1 2C 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 CODDE 0 resVect -
+__HTABLA 512 0 code 0 TABLA -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__LTABLA 0 0 code 0 TABLA -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 2C 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 6 0 CODDE 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 C 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
